@@ -1,0 +1,6 @@
+The Apache HTTP Server version 2.4.49 is known to be vulnerable to a remote code execution vulnerability (CVE: CVE-2022-44434). This issue affects the mod_rewrite module. The vulnerability is due to the way the mod_rewrite module handles the 'RewriteCond' directive. An attacker can exploit this vulnerability by sending a specially crafted request to the target server. This could allow the attacker to execute arbitrary code on the target server.
+
+---
+
+
+---
