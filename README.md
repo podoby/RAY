@@ -24,3 +24,6 @@ export your API Key:
 ```export MISTRAL_API_KEY="PUT IT HERE"```
 
 *you can get one from here https://v2.auth.mistral.ai/login?flow=e4262488-63bf-4278-a4e6-b2114c51ab4e
+
+Run:
+ray --help
