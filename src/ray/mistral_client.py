@@ -25,3 +25,19 @@ def call_ray_model(user_prompt: str, model: str | None = None) -> str:
         )
 
     return response.choices[0].message.content.strip()
+
+def build_prompt(user_text: str, file_content: str | None, file_type: str | None):
+    if file_content:
+        return f"""
+The following input is {file_type}. Analyze it for potential security risks,
+misconfigurations, or indicators of vulnerabilities provide the vulnerable line explain it and include mitigation.
+
+FILE CONTENT:
+----------------
+{file_content}
+----------------
+
+Provide a structured security analysis.
+"""
+    else:
+        return user_text

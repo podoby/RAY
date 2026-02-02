@@ -1,0 +1,2 @@
+[console_scripts]
+ray = ray.cli:app
