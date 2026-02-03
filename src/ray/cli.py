@@ -54,7 +54,6 @@ INPUT CONTENT:
         typer.echo("\n--- Ray Analysis ---\n")
         typer.echo(response_text)
 
-        # ✅ THIS must align with typer.echo(), not deeper
         with open(out, "w", encoding="utf-8") as f:
             f.write(response_text)
 
